@@ -33,6 +33,7 @@ RUN apt-get install -y \
 		gala \
 		plank \
 #		tigervnc \
+		vnc4server \
 		novnc \
 		websockify\
     && apt-get autoclean \
