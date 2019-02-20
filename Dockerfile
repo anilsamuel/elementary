@@ -32,7 +32,7 @@ RUN apt-get install -y \
 		pantheon \
 		gala \
 		plank \
-		tigervnc \
+#		tigervnc \
 		novnc \
 		websockify\
     && apt-get autoclean \
