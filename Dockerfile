@@ -44,10 +44,10 @@ RUN apt-get install -y \
 #ADD tigervnc-1.8.0.x86_64 /
 
 # Clone noVNC.
-#RUN git clone https://github.com/novnc/noVNC.git $HOME/noVNC
+RUN git clone https://github.com/novnc/noVNC.git $HOME/noVNC
 
 # Clone websockify for noVNC
-#Run git clone https://github.com/kanaka/websockify $HOME/noVNC/utils/websockify
+Run git clone https://github.com/kanaka/websockify $HOME/noVNC/utils/websockify
 
 # Download ngrok.
 #ADD https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip $HOME/ngrok/ngrok.zip
