@@ -42,6 +42,7 @@ RUN apt-get install -y \
 		novnc \
 		websockify \
 		elementary-theme elementary-icon-theme elementary-default-settings elementary-desktop elementary-tweaks \
+		vim \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
