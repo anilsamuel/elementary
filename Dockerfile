@@ -23,6 +23,7 @@ RUN apt-get update \
 #        nautilus \
 #        gedit \
         xterm \
+	xserver-xephyr \
         sudo
 
 # Install dependency components.
