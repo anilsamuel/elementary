@@ -8,6 +8,11 @@ ENV HOME /home/$USER
 # Create new user for vnc login.
 RUN adduser $USER --disabled-password
 
+# Add elementary repos
+RUN add-apt-repository ppa:elementary-os/stable
+RUN add-apt-repository ppa:elementary-os/os-patches
+RUN add-apt-repository ppa:philip.scott/elementary-tweaks
+
 # Install Ubuntu Unity.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -35,7 +40,8 @@ RUN apt-get install -y \
 #		tigervnc \
 		vnc4server \
 		novnc \
-		websockify\
+		websockify \
+		elementary-theme elementary-icon-theme elementary-default-settings elementary-desktop elementary-tweaks \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
